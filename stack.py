@@ -35,8 +35,6 @@ if __name__=="__main__":
     
     print(dishes)
 
-    print(dishes.peek())
     
-    print(dishes.is_empty())
-    
+
     

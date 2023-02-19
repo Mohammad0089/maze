@@ -53,7 +53,9 @@ def is_legal_path(maze: list, pos: tuple)-> bool:
     num_rows = len(maze)
     num_cols = len(maze[0])
     
-    return 0<= i < num_rows and 0<= j <num_cols and maze [i][j] !="*"
+    return 0<= i < num_rows and 0<= j <num_cols and maze[i][j] !="*"
+    
+    
 
 def get_path(predecessors: dict, start: chr , goal :chr)-> list:
     """_summary_

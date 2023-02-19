@@ -1,4 +1,4 @@
-def read_maze(fileName = "./mazes/modest_maze.txt"):
+def read_maze(fileName = "./mazes/diagonal_23x23.txt")->list[list]:
     try:
         with open(fileName) as mazeFile:
             # 2D list 
@@ -17,6 +17,6 @@ def read_maze(fileName = "./mazes/modest_maze.txt"):
 
 
 if __name__=="__main__":
-    maze = read_maze("./mazes/challenge_maze.txt")
+    maze = read_maze()
     for row in maze:
         print(row)

@@ -1,7 +1,7 @@
 from helpers import read_maze, offset, is_legal_path, get_path
 from stack import myStack
 
-def dfs(maze, start, goal):
+def dfs(maze, start, goal)-> bool:
     stack = myStack()
     stack.push(start)
     predecessors = {
@@ -20,3 +20,12 @@ def dfs(maze, start, goal):
                 predecessors[neighbor] = current_cell
     return None
                 
+if __name__ == "__main__":
+    maze_default = [[" "," ","*"," "],
+                    [" "," "," "," "],
+                    [" ","*"," ","*"],
+                    [" "," "," "," "]]
+    #maze = read_maze("./mazes/diagonal_23x23.txt")
+    print("im here")
+    path = dfs(maze_default, (0,0),(3,3))
+    print(path)
